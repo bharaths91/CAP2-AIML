@@ -1,0 +1,2 @@
+﻿Hii 
+   This is duplicate text file and the file name is 'b.txt'.
