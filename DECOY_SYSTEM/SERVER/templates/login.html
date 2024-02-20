@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>DecoySystem|Login</title>
+
+    <link rel="stylesheet" href="/static/css/style_1.css" />
+
+    <style>
+      .nav_title_btn {
+        text-align: center;
+        font-family: "Fantasy", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #336699;
+        font-style: italic;
+
+        padding-top: 10px;
+        border-radius: 4px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+      }
+
+      #nav_title {
+        font-weight: bold;
+      }
+
+      .form_title {
+        text-align: center;
+        margin-top: 30px;
+        color: black;
+      }
+
+      .form_msg {
+        text-align: center;
+        color: orange;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav_title_btn">
+      <h1 id="nav_title">DECOY SYSTEM</h1>
+    </div>
+    <div class="container_login">
+      <div class="screen">
+        <div class="screen__content">
+          <h3 class="form_title">LOGIN FORM</h3>
+          <h3 class="form_msg">{{ msg }}</h3>
+          <form class="login" action="/login" method="POST">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input
+                type="email"
+                name="email"
+                class="login__input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input
+                type="password"
+                class="login__input"
+                name="password"
+                placeholder="Password"
+              />
+            </div>
+            <button class="button login__submit">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+          </form>
+          <div class="social-login">
+            <div class="sigup_button">
+              <a href="/register" class="social-login__icon fab fa-instagram"
+                >Signup</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span
+            class="screen__background__shape screen__background__shape4"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape3"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape2"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape1"
+          ></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
